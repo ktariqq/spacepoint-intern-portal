@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --bg: #0D0916;
+  --surface: #150E22;
+  --surface-raised: #1E1530;
+  --border: #2B2140;
+  --border-strong: #3D2E57;
+  --text-primary: #F1EEF8;
+  --text-secondary: #B3A8C7;
+  --text-muted: #7A6F92;
+  --accent: #8B5CF6;
+  --accent-hover: #9D75F9;
+  --accent-soft: #C9B8FB;
+  --success: #7FC9A0;
+  --warning: #E0B45D;
+  --error: #E2857D;
+  --info: #7FA8D9;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  font-size: 15px;
+}
+
+.mono { font-family: 'IBM Plex Mono', ui-monospace, monospace; }
+
+::-webkit-scrollbar { width: 9px; height: 9px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 5px; }
+
+*:focus-visible {
+  outline: 2px solid var(--accent-soft);
+  outline-offset: 2px;
+}
+
+button { font-family: inherit; }
